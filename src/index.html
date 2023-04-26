@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Icon -->
+    <link rel="icon" href="./public/logo.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Watch store, new models, wide selection, modern design."
+    />
+    <title>The Watch Spot</title>
+    <!-- Modern-Normalize -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <load src="./partials/header.html" />
+
+    <main>
+      <!-- Hero -->
+      <load src="partials/hero.html" />
+
+      <!-- About us -->
+      <load src="./partials/about-us.html" />
+
+      <!-- Catalog -->
+      <load src="./partials/catalog.html" />
+
+      <!-- New watches -->
+      <load src="./partials/new-watches.html" />
+
+      <!-- Sale -->
+      <load src="./partials/sale.html" />
+    </main>
+
+    <!-- Footer -->
+    <load src="./partials/footer.html" />
+
+    <!-- Modal (popup) -->
+    <load src="./partials/popup.html" />
+
+    <script type="module" src="/main.js"></script>
+
+    <!-- Swiper Js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize-Swiper -->
+    <script>
+      const swiper = new Swiper('.myswiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        keyboard: {
+          enabled: true,
+        },
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+        },
+      });
+    </script>
+
+    <!-- Back-to-top -->
+    <div id="progress">
+      <span id="progress-value">
+        <svg width="24" height="24">
+          <use href="./img/icons.svg#arrow-up"></use>
+        </svg>
+      </span>
+    </div>
+  </body>
+</html>
